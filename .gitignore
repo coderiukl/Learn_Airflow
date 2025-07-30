@@ -1,0 +1,57 @@
+# Airflow logs (rất nặng, không cần commit)
+logs/
+*.log
+
+# Dữ liệu metadata của Airflow (SQLite, venv,...)
+airflow.db
+airflow-webserver.pid
+config
+unittests.cfg
+
+plugins
+
+# Thư mục airflow home nếu tự tạo
+.airflow/
+
+# File môi trường môi trường cá nhân
+.env
+.env.*
+
+# Thư mục dags biên dịch tạm thời (nếu có)
+__pycache__/
+*.pyc
+
+# Thư mục data hoặc dump tạm
+data/
+*.dump
+
+# Docker/Compose artifact
+*.pid
+*.sock
+
+# VSCode hoặc PyCharm project files
+.vscode/
+.idea/
+
+# Python virtual environment
+venv/
+ENV/
+env/
+
+# Jupyter notebook checkpoints (nếu có xài)
+.ipynb_checkpoints/
+
+# airflow plugin build
+plugins/__pycache__/
+plugins/*.pyc
+
+# DAGs build file hoặc airflow test file
+dags/__pycache__/
+dags/*.pyc
+dags/*.zip
+
+dags/building_a_csv_to_a_json_data_pipeline.py
+# Mac OS / Windows hệ điều hành
+.DS_Store
+Thumbs.db
+
